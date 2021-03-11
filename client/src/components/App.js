@@ -9,25 +9,29 @@ import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
 
 const App = (props) => {
-  const [currentUser, setCurrentUser] = useState(undefined);
-  useEffect(() => {
-    getCurrentUser()
-      .then((user) => {
-        setCurrentUser(user);
-      })
-      .catch(() => {
-        setCurrentUser(null);
-      });
-  }, []);
+  
   return (
     <Router>
-      <TopBar user={currentUser} />
+      <TopBar />
       <Switch>
         <Route exact path="/">
-          <h2>Hello from react</h2>
+          <div className="base-message">
+            <h2>Making it right.</h2>
+            <h4>We design, develop, and deliver experiences that are technically impressive and easy to use.</h4>
+          </div>
         </Route>
-        <Route exact path="/users/new" component={RegistrationForm} />
-        <Route exact path="/user-sessions/new" component={SignInForm} />
+        <Route exact path="/services">
+          <h1>Services</h1>
+        </Route>
+        <Route exact path="/clients">
+          <h1>Clients</h1>
+        </Route>
+        <Route exact path="/pricing">
+          <h1>Pricing</h1>
+        </Route>
+        <Route exact path="/Resources">
+          <h1>Resources</h1>
+        </Route>
       </Switch>
     </Router>
   );
