@@ -24,14 +24,22 @@ const TopBar = ({ user }) => {
     <div className="top-bar">
       <div className="top-bar-left">
         <ul className="menu">
-          <li className="menu-text">App</li>
           <li>
-            <Link to="/">Home</Link>
+            <Link className="menu-text" to="/">Bowst</Link>
+          </li>
+          <li>
+            <Link className="links" to="/services">Services</Link>
+          </li>
+          <li>
+            <Link className="links" to="/clients">Clients</Link>
+          </li>
+          <li>
+            <Link className="links" to="/pricing">Pricing</Link>
+          </li>
+          <li>
+            <Link className="links" to="/resources">Resources</Link>
           </li>
         </ul>
-      </div>
-      <div className="top-bar-right">
-        <ul className="menu">{user ? authenticatedListItems : unauthenticatedListItems}</ul>
       </div>
     </div>
   );

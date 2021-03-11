@@ -12,3 +12,41 @@
   -moz-tab-size: 4;
   tab-size: 4;
 }
+
+.base-message {
+  text-align: center;
+  padding-top: 60px;
+  font-weight: lighter;
+}
+
+.base-message h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.top-bar{
+  height: 80px;
+  box-shadow: 3px 3px 5px #d0d0d0;
+  background-color: white;
+}
+
+.top-bar ul{
+  background-color: white;
+  padding-left: 220px;
+}
+
+.menu .menu-text{
+  font-size: 40px;
+  font-weight: lighter;
+  padding-right: 40px; 
+}
+
+.menu a{
+  padding: 25px 20px 25px 20px;
+  color: black
+}
+
+h1{
+  text-align: center;
+  padding-top: 100px;
+}
