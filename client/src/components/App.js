@@ -18,11 +18,13 @@ const App = (props) => {
       <TopBar />
       <Switch>
         <Route exact path="/">
-          <div className="base-message">
-            <h2 className="main-title">Making it right.</h2>
-            <h4>We design, develop, and deliver experiences that are technically impressive and easy to use.</h4>
-            <div className="tile-container">
-            <HypeTile/><BeswickTile/><EasternTile/> 
+          <div className="page-info">
+            <div className="base-message">
+              <h2 className="main-title">Making it right.</h2>
+              <h4 className="description">We design, develop, and deliver experiences that are technically impressive and easy to use.</h4>
+              <div className="tile-container">
+              <HypeTile/><BeswickTile/><EasternTile/> 
+              </div>
             </div>
           </div>
         </Route>
