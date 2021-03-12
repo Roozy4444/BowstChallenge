@@ -57,5 +57,133 @@ h1{
   position: absolute;
   bottom: 0px;
   width: 100%;
-  height: 155px;
+  height: 100px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+body{
+  background-color: rgb(235, 235, 235);
+}
+
+.tile-one{
+  box-shadow: 0 3px 3px 0 rgba(189, 189, 189, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 100px;
+  margin-right: 0px;
+  margin-left: 80px;
+  width: 25%;
+  height: 25%;
+  float:left;  
+  padding: 50px 30px 80px 30px;
+  background-color: white;
+}
+
+.tile-one .briefcase{
+  color: rgb(106, 57, 254);
+  background: lightblue;
+  width: 50px;
+  height: 50px;
+  float: left; 
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.tile-one .hype{
+  text-align: left;
+  padding-left: 10px;
+  font-weight: normal;
+  color: rgb(97, 93, 104);
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+
+.tile-one h4{
+  text-align: left;
+  margin-left: 70px;
+}
+
+.tile-two{
+  box-shadow: 0 3px 3px 0 rgba(189, 189, 189, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  // margin-top: 0px;
+  // margin-right: 0px;
+  // margin-left: 600px;
+  
+  width: 25%;
+  height: 25%;
+  margin-left: 100px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  float:left;  
+  padding: 50px 30px 90px 30px;
+  background-color: white;
+  position: relative;
+  margin-top: 100px;
+}
+
+.tile-two .handshake{
+  color: rgb(194, 0, 0);
+  background: rgb(255, 151, 151);
+  width: 50px;
+  height: 50px;
+  float: left;
+  padding: 10px;
+  border-radius: 25px;
+  transform: rotate(135deg);
+}
+
+.tile-two h4{
+  margin-left: 70px;
+  text-align: left;
+}
+
+.tile-two .beswick{
+  text-align: left;
+  padding-left: 10px;
+  font-weight: normal;
+  color: rgb(97, 93, 104);
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+
+.tile-three{
+  box-shadow: 0 3px 3px 0 rgba(189, 189, 189, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 25%;
+  background-color: white;
+  float: right;
+  margin-top: 100px;
+  margin-right: 80px;
+  padding: 50px 30px 105px 30px;
+}
+
+.tile-three .checkmark{
+  color: white;
+  background: rgb(106, 253, 150);
+  width: 50px;
+  height: 50px;
+  float: left; 
+  padding: 10px;
+  border-radius: 25px; 
+}
+
+.tile-three .propane{
+  text-align: left;
+  padding-left: 10px;
+  font-weight: normal;
+  color: rgb(97, 93, 104);
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+
+.tile-three h4{
+  margin-left: 70px;
+  text-align: left;
+}
+
+.tile-container{ 
+  height:10px;  
+  padding-top:20px; 
+  padding-left:15px; 
+  padding-right:15px;
+  margin: auto;
+  width: 80%;
 }

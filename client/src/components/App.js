@@ -7,6 +7,9 @@ import RegistrationForm from "./registration/RegistrationForm";
 import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
 import BottomBar from "./layout/BottomBar"
+import HypeTile from "./layout/HypeTile"
+import BeswickTile from "./layout/BeswickTile"
+import EasternTile from "./layout/EasternTile"
 
 const App = (props) => {
   
@@ -16,8 +19,11 @@ const App = (props) => {
       <Switch>
         <Route exact path="/">
           <div className="base-message">
-            <h2>Making it right.</h2>
+            <h2 className="main-title">Making it right.</h2>
             <h4>We design, develop, and deliver experiences that are technically impressive and easy to use.</h4>
+            <div className="tile-container">
+            <HypeTile/><BeswickTile/><EasternTile/> 
+            </div>
           </div>
         </Route>
         <Route exact path="/services">
